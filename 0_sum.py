@@ -1,3 +1,5 @@
+#this takes numbers from the user and prints the sum on exit
+
 def main():
 	done = False
 	count = 0

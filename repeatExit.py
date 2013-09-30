@@ -1,3 +1,5 @@
+#this asks user input repeatedly until user enters same string twice in a row
+
 def main():
 	done = False
 	clue = raw_input("String: ")
