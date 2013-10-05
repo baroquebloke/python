@@ -36,6 +36,8 @@ def Length(x):
 		return "This has %d digits" % number_of_digits
 
 
+#if enter/return is hit while anything other than a number is present in the text field, 
+#the program crashes... Not sure what to do about this...
 def main():
 	done = False
 	while not done:
