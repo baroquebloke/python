@@ -1,4 +1,4 @@
-#Jacob Farnsworth
+# Jacob Farnsworth
 #this program has three functions.  
 #Function Length(x) returns the number of digits in integer x.  
 #Function Power(a, b) returns a to the bth power, ie: a mutiplied by itself b times.
