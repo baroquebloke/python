@@ -1,3 +1,4 @@
+#Jacob Farnsworth
 #this program has three functions.  
 #Function Length(x) returns the number of digits in integer x.  
 #Function Power(a, b) returns a to the bth power, ie: a mutiplied by itself b times.
@@ -10,25 +11,25 @@ import math
 # only states that we can.  
 # I prefer using the module over the loop.  
 # I've included the loop commented out as well.
-def Factorial(n):
+def factorial(n):
 	total = math.factorial(n)
 	#total = 1
 	#for number in range(2, n+1):
 	#	total = total * number
 	print "The factorial of %d is %d"  % (n, total)	
-	return Length(total) 
+	return length(total) 
 
 
-def Power(a, b):
+def power(a, b):
 	total = 1
 	for number in range(1, b+1):
 		number = a * total
 		total = number
 	print "power(%d, %d) is %d" % (a, b, total)
-	return Length(total)
+	return length(total)
 
 
-def Length(x):
+def length(x):
 	number_of_digits = len(str(x))
 	if number_of_digits <= 1:
 		return "This has %d digit" % number_of_digits
@@ -37,6 +38,7 @@ def Length(x):
 
 
 #if enter/return is hit while anything other than a number is present in the text field, 
+#or even a blank space or nothing at all,
 #the program crashes... Not sure what to do about this...
 def main():
 	done = False
@@ -48,7 +50,7 @@ def main():
 		elif user_number < 0:
 			done = False
 		else:
-			print Factorial(user_number)
-			print Power(user_number, user_number)
+			print factorial(user_number)
+			print power(user_number, user_number)
 
 main()
