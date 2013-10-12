@@ -34,4 +34,3 @@ def test():
 			print p, a
 				
 test()
-
