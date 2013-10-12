@@ -14,7 +14,6 @@ def ordering(n):
 			new_order.append(number)
 	return new_order
 	
-
 def anagram(w, p):
 	new_word = []
 	for letter in w:
