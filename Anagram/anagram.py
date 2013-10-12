@@ -17,7 +17,9 @@ def ordering(n):
 
 def anagram(w, p):
 	new_word = []
-	
+	for letter in w:
+		letter = letter.index(p)
+		new_word.append(letter)
 	return new_word
 
 def test():
