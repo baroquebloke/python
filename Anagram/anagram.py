@@ -14,12 +14,15 @@ def ordering(n):
 			new_order.append(number)
 	return new_order
 	
+
 def anagram(w, p):
-	new_word = []
-	for letter in w:
-		letter = letter.index(p)
-		new_word.append(letter)
-	return new_word
+    #I'm supposed to have a loop for this function that runs through p, and for each index in p, put that entry of word in the result...
+    zip_list = zip(p, w)
+    zip_list.sort()
+    result = [x[1] for x in zip_list]
+
+    return result
+
 
 def test():
 	done = False
