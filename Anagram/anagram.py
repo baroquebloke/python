@@ -16,12 +16,11 @@ def ordering(n):
 	
 
 def anagram(w, p):
-    #I'm supposed to have a loop for this function that runs through p, and for each index in p, put that entry of word in the result...
-    zip_list = zip(p, w)
-    zip_list.sort()
-    result = [x[1] for x in zip_list]
-
-    return result
+    word = []
+    for i in p:
+        x = w[i]
+        word.append(x)
+    return ''.join(word)
 
 
 def test():
