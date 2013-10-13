@@ -1,20 +1,21 @@
 #this program reads words and prints anagrams
 
+
 from random import *
 
 def ordering(n):
     #this generates a random ordering 
     #for a given word, and returns the order
-	new_order = []
-	done = False
-	while not done:
-		number = randint(0, n-1)
-		if number in new_order:
-			if len(new_order) == n:
-				done = True
-		elif number not in new_order:
-			new_order.append(number)
-	return new_order
+    new_order = []
+    done = False
+    while not done:
+        number = randint(0, n-1)
+        if number in new_order:
+            if len(new_order) == n:
+                done = True
+        elif number not in new_order:
+            new_order.append(number)
+    return new_order
 	
 def anagram(w, p):
     #this takes the aforementioned 
