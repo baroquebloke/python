@@ -1,3 +1,4 @@
+#Jacob Farnsworth
 #this program reads words and prints anagrams
 
 from random import *
@@ -7,6 +8,9 @@ def ordering(n):
     #for a given word, and returns the order
     new_order = []
     done = False
+    #I feel this is rather more bloated than it needs to be, 
+    #but it seems to work, and I don't want to mess with it
+    #since midterms are here...  gah!!!
     while not done:
         number = randint(0, n-1)
         if number in new_order:
@@ -35,8 +39,11 @@ def main():
     for line in file:
         word_list.append(line.strip())
     #case recognition only partially works.  
-    #ie: Tom will return mot,
-    #but mot will never return Tom
+    #ie: Tom may return mot,
+    #but mot will never return Tom.
+    #come to think of it, the returned anagram will 
+    #only ever be lowercase with the way I have this written.
+    #I'd love it if we covered this in class...
     for word in word_list:
         lc_word = word.lower()
         p = ordering(len(lc_word))
