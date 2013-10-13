@@ -1,6 +1,5 @@
 #this program reads words and prints anagrams
 
-
 from random import *
 
 def ordering(n):
@@ -36,12 +35,12 @@ def main():
     for line in file:
         word_list.append(line.strip())
     #case recognition only partially works.  
-    #ie: program will print "Edna edna"
-    ############ as well as "Edna dean"
+    #ie: Tom will return mot,
+    #but mot will never return Tom
     for word in word_list:
         lc_word = word.lower()
         p = ordering(len(lc_word))
         a = anagram(lc_word, p)
-        if a in word_list and a != word:
+        if a in word_list and a != lc_word:
             print word, a
 main()
