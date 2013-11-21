@@ -1,3 +1,5 @@
+### Jacob Farnsworth
+
 from random import *
 
 class Dice:
